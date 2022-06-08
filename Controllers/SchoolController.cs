@@ -12,6 +12,8 @@ namespace dotnet6_studentgrades.Controllers
                 Name = ".NET School",
                 FoundedYear = 2022
             };
+            ViewBag.DynamicData = "Dynamic information";
+
             return View(school);
         }
     }

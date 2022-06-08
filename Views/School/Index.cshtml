@@ -2,8 +2,13 @@
 
 @{
     ViewData["Title"] = "School information";
+    Layout = "Simple";
 }
 
-<h1>School</h1>
+<h1>School @ViewData["Title"]</h1>
 <h2>Name: @Model.Name</h2>
 <p><strong>Founded year: @Model.FoundedYear</strong></p>
+
+<p><i>@ViewBag.DynamicData</i></p>
+<p><i>@ViewData["DynamicData"]</i></p> <!--Viewbag and Viewdata are two views of the same information. Access is different-->
+
