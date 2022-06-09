@@ -1,11 +1,13 @@
 @{
-    ViewData["Title"] = "Subject information";
+    ViewData["Title"] = "Students information";
     Layout = "Simple";
 }
 
 <h1>@ViewData["Title"]</h1>
 <strong>From partial view</strong>
-<partial name="SchoolObjectSimple"/>
+
+<partial name="SchoolObjectList"/>
+
 
 <p><i>@ViewBag.Date</i></p>
 

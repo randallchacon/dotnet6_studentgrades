@@ -1,3 +1,4 @@
+
 @{
     ViewData["Title"] = "Subject information";
     Layout = "Simple";
@@ -6,10 +7,8 @@
 <h1>@ViewData["Title"]</h1>
 <strong>From partial view</strong>
 
-@foreach (var subject in Model)
-{
-    <partial name="SubjectSimple" model="subject"/>
-}
+<partial name="SchoolObjectList"/>
+
 
 <p><i>@ViewBag.Date</i></p>
 

@@ -7,7 +7,7 @@ namespace dotnet6_studentgrades.Controllers
     {
         public IActionResult Index()
         {
-            var subject = new Subject(){
+            var subject = new Student(){
                 UniqueId = Guid.NewGuid().ToString(),
                 Name = "C# programming",
             };
@@ -19,15 +19,15 @@ namespace dotnet6_studentgrades.Controllers
         }
         public IActionResult Multiple()
         {
-            var SubjectList = new List<Subject>(){
-                new Subject{Name="Finance", UniqueId= Guid.NewGuid().ToString()},
-                new Subject{Name="Data bases", UniqueId= Guid.NewGuid().ToString()},
-                new Subject{Name="Web programming", UniqueId= Guid.NewGuid().ToString()},
-                new Subject{Name="HTML and CSS", UniqueId= Guid.NewGuid().ToString()},
-                new Subject{Name="Security", UniqueId= Guid.NewGuid().ToString()},
+            var SubjectList = new List<Student>(){
+                new Student{Name="Finance", UniqueId= Guid.NewGuid().ToString()},
+                new Student{Name="Data bases", UniqueId= Guid.NewGuid().ToString()},
+                new Student{Name="Web programming", UniqueId= Guid.NewGuid().ToString()},
+                new Student{Name="HTML and CSS", UniqueId= Guid.NewGuid().ToString()},
+                new Student{Name="Security", UniqueId= Guid.NewGuid().ToString()},
             };
 
-            var subject = new Subject(){
+            var subject = new Student(){
                 UniqueId = Guid.NewGuid().ToString(),
                 Name = "C# programming",
             };
