@@ -1,4 +1,4 @@
-namespace dotnet6_studentgrades
+namespace dotnet6_studentgrades.Models
 {
     public enum SchoolType
     {

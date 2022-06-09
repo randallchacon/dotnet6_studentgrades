@@ -8,7 +8,7 @@ namespace dotnet6_studentgrades.Controllers
         public IActionResult Index()
         {
             var school = new School(){
-                SchoolId = Guid.NewGuid().ToString(),
+                UniqueId = Guid.NewGuid().ToString(),
                 Name = ".NET School",
                 FoundedYear = 2022
             };

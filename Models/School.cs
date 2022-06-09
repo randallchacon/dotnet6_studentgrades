@@ -2,7 +2,6 @@ namespace dotnet6_studentgrades.Models
 {
     public class School : SchoolObjectBase
     {
-        public string SchoolId { get; set; }
         public int FoundedYear { get; set; }
         public string Country { get; set; }
         public string City { get; set; }
