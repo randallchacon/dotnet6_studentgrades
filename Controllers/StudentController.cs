@@ -9,7 +9,7 @@ namespace dotnet6_studentgrades.Controllers
         public IActionResult Index()
         {
             var student = new Student(){
-                UniqueId = Guid.NewGuid().ToString(),
+                Id = Guid.NewGuid().ToString(),
                 Name = "Randall",
             };
 
@@ -39,10 +39,10 @@ namespace dotnet6_studentgrades.Controllers
                                from a1 in lastName
                                select new Student { 
                                    Name = $"{n1} {n2} {a1}" ,
-                                   UniqueId = Guid.NewGuid().ToString()
+                                   Id = Guid.NewGuid().ToString()
                                    };
 
-            return studentList.OrderBy((al) => al.UniqueId).ToList();          
+            return studentList.OrderBy((al) => al.Id).ToList();          
         }        
     }
 }

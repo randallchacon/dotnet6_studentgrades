@@ -5,20 +5,17 @@ namespace dotnet6_studentgrades.Controllers
 {
     public class SchoolController : Controller
     {
+        private SchoolContext _context;
         public IActionResult Index()
         {
-            var school = new School(){
-                FoundedYear = 2022,
-                UniqueId = Guid.NewGuid().ToString(),
-                Name = ".NET School",
-                City = "San José",
-                Country = "Costa Rica",
-                Address = "Central Avenue",
-                SchoolType = SchoolType.Secondary
-            };
             ViewBag.DynamicData = "Dynamic information";
-
+            var school = _context.Schools.FirstOrDefault();
             return View(school);
+        }
+
+        public SchoolController(SchoolContext context)
+        {
+            _context = context;
         }
     }
 }

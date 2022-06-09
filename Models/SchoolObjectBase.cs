@@ -4,7 +4,7 @@ namespace dotnet6_studentgrades.Models
 {
     public abstract class SchoolObjectBase
     {
-        public string UniqueId { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
 
         public SchoolObjectBase()
@@ -14,7 +14,7 @@ namespace dotnet6_studentgrades.Models
 
         public override string ToString()
         {
-            return $"{Name},{UniqueId}";
+            return $"{Name},{Id}";
         }
     }
 }

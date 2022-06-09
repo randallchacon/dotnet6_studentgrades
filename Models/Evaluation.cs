@@ -5,7 +5,7 @@ namespace dotnet6_studentgrades.Models
     public class Evaluation : SchoolObjectBase
     {
         public Student Student { get; set; }
-        public Student Subject  { get; set; }
+        public Subject Subject  { get; set; }
 
         public float Grade { get; set; }
 
